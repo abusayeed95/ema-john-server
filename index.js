@@ -58,6 +58,6 @@ client.connect(err => {
 });
 
 
-app.get('/', (req, res) => res.send('Welcome'));
+app.get('/', (req, res) => res.send('<body style="height: 100vh; color: white; background: rgba(0,0,0,0.8); font-family: sans-serif; font-size: 50px; margin: 0; padding: 0; display: flex; align-items: center; justify-content: center"><h1>Welcome</h1></body>'));
 
 app.listen(parseInt(process.env.PORT || 8080));
